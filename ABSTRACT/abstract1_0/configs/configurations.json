@@ -1,0 +1,155 @@
+{
+    "configs": {
+        "intervalle": "5", 
+        "emailFrom": "adama.dieng@orange.com", 
+        "smsFrom": "+33768225617",
+        "protocole": "http", 
+        "port": "5555",
+        "schemasmooth": "../profils/static/SMOOTH/SmoothStreamingMedia.xsd",
+        "schemadash": "../profils/static/DASH/MPD.xsd",
+        "pods": {
+            "pod": [
+                {
+                    "idpod": "1", 
+                    "name": "poda", 
+                    "link": "strm.poda.manager.cdvr.orange.fr", 
+                    "streamer": [
+                        {
+                            "idstreamer": "a1", 
+                            "address": "192.168.134.65"
+                        }, 
+                        {
+                            "idstreamer": "a2", 
+                            "address": "192.168.134.67"
+                        }
+                    ], 
+                    "channels": {
+                        "channel": {
+                            "idchannel": "1", 
+                            "nom": "Arte"
+                        }
+                    }
+                }, 
+                {
+                    "idpod": "2", 
+                    "name": "podb", 
+                    "link": "strm.podb.manager.cdvr.orange.fr", 
+                    "streamer": [
+                        {
+                            "idstreamer": "b1", 
+                            "address": "192.168.134.66"
+                        }, 
+                        {
+                            "idstreamer": "b2", 
+                            "address": "192.168.134.68"
+                        }
+                    ], 
+                    "channels": {
+                        "channel": [
+                            {
+                                "idchannel": "1", 
+                                "nom": "CH_1"
+                            },
+                            {
+                                "idchannel": "2", 
+                                "nom": "CH_2"
+                            }, 
+                            {
+                                "idchannel": "3", 
+                                "nom": "CH_3"
+                            }, 
+                            {
+                                "idchannel": "4", 
+                                "nom": "CH_4"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }, 
+        "modes": {
+            "smooth": {
+                "staticabr": "shss", 
+                "fragment": "2", 
+                "manifestsuffix": "ism", 
+                "device": "SMOOTH_2S", 
+                "client": null
+            }, 
+            "dash": {
+                "staticabr": "sdash", 
+                "fragment": "2", 
+                "manifestsuffix": "mpd", 
+                "device": "DASH_2S", 
+                "client": null
+            }, 
+            "hls": {
+                "staticabr": "shls", 
+                "fragment": "10", 
+                "manifestsuffix": "m3u8", 
+                "device": "HLS_LOW", 
+                "client": null
+            }
+        }, 
+        "timeout": "10", 
+        "commands": {
+            "live": {
+                "period": "2"
+            }, 
+            "vod": {
+                "period": "5"
+            }, 
+            "catchup": {
+                "period": "-4", 
+                "jump": "-4"
+            }, 
+            "startover": {
+                "period": "15", 
+                "start": "07J-00H-00M-00S",
+                "end": "07J-00H-00M-00S"
+            }, 
+            
+            "ntc": {
+                "period": "15", 
+                "jump": "-2"
+            }, 
+            "npvr": {
+                "period": "1", 
+                "jump": "2"
+            }
+        }, 
+        "destinationsEmail": {
+            "mail": [
+                {
+                    "idmail": "1", 
+                    "address": "adama.dieng@orange.com"
+                }, 
+                {
+                    "idmail": "2", 
+                    "address": "adama.dieng@orange.com"
+                }, 
+                {
+                    "idmail": "3", 
+                    "address": "adama.dieng@orange.com"
+                }
+            ]
+        }, 
+        "destinationSms": {
+            "sms": {
+                "idsms": "1", 
+                "numero": "+33768225617"
+            }
+        },
+        "nameOfLevelFile": "Level",
+        "folderOfLevelFile": "/home/kirikou/HLS/Levels/",
+        "nameOfIframeFile": "Iframe",
+        "folderOfIframeFile": "/home/kirikou/HLS/Iframe/",
+        "livefoldersmooth": "/home/kirikou/manifests/dynamic/MSS/Live/", 
+        "catchupfoldersmooth": "/home/kirikou/manifests/dynamic/MSS/Catchup/",
+        "livefolderdash": "/home/kirikou/manifests/dynamic/DASH/Live/",
+        "catchupfolderdash": "/home/kirikou/manifests/dynamic/DASH/Catchup/",
+        "livefolderhls": "/home/kirikou/manifests/dynamic/HLS/Live/",
+        "catchupfolderhls": "/home/kirikou/manifests/dynamic/HLS/Catchup/",
+        "logdirectory": "/home/kirikou/ABSTRACT/abstract1_0/logabstract",
+        "logprefixname": "Abstract"
+    }
+}

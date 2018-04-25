@@ -1,0 +1,96 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 41 (0x29)
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=FR, ST=BR, L=Cesson, O=ORANGE, OU=OLPS_VPN, CN=mojito/name=OLPS_VPN/emailAddress=me@myhost.mydomain
+        Validity
+            Not Before: Mar  7 09:02:59 2017 GMT
+            Not After : Mar  5 09:02:59 2027 GMT
+        Subject: C=FR, ST=BR, L=Cesson, O=ORANGE, OU=OLPS_VPN, CN=adama/name=OLPS_VPN/emailAddress=me@myhost.mydomain
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:bf:dc:c9:18:1d:7a:d3:87:9b:5a:85:26:23:81:
+                    63:97:63:14:7b:f6:ad:e8:d0:66:73:2e:d6:62:d8:
+                    10:ff:c6:bc:89:9c:99:cf:83:39:38:d0:8a:fc:97:
+                    12:a6:44:6a:82:31:dd:71:26:c4:7f:cf:cc:7d:98:
+                    b7:61:b9:cf:b7:bf:a2:fb:8a:3d:f3:84:17:db:f8:
+                    82:cf:77:bc:4a:21:b3:b5:6b:f1:04:fc:00:53:d5:
+                    5a:8b:65:60:1b:74:29:c2:95:ab:2d:7c:76:03:7e:
+                    4e:4a:c9:07:d5:76:32:4b:cf:76:62:cd:97:83:c8:
+                    8e:6a:27:87:40:20:63:22:03:d7:8f:6e:f3:0b:4c:
+                    f7:15:02:8e:8f:03:ce:26:19:70:eb:3a:24:47:a8:
+                    60:b3:59:ad:35:65:bd:38:08:e2:84:3f:2b:dd:c7:
+                    1d:27:8a:5f:d7:cf:6a:78:51:f4:76:c0:e7:b8:40:
+                    b0:43:ed:54:6e:7d:ed:e0:cf:94:16:98:cf:b4:d3:
+                    27:f7:e6:d9:0d:3d:75:f5:2a:37:05:d7:58:eb:f5:
+                    7e:46:41:aa:c7:89:a5:a5:0e:25:26:88:9e:f6:63:
+                    38:8c:d7:f8:fa:2a:c6:a3:1b:da:71:08:81:18:b7:
+                    ea:2d:e7:1c:10:f0:66:c8:9c:e6:f6:26:3d:ea:4e:
+                    22:fd
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Comment: 
+                Easy-RSA Generated Certificate
+            X509v3 Subject Key Identifier: 
+                E9:AA:24:43:6C:DF:C8:75:84:A6:3E:FA:C9:69:74:CA:59:9D:0C:AF
+            X509v3 Authority Key Identifier: 
+                keyid:C1:48:34:F8:2B:14:35:BC:94:3C:A1:29:F5:D6:B8:C3:AC:AB:D3:C0
+                DirName:/C=FR/ST=BR/L=Cesson/O=ORANGE/OU=OLPS_VPN/CN=mojito/name=OLPS_VPN/emailAddress=me@myhost.mydomain
+                serial:AD:02:62:2E:DC:42:3F:27
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            X509v3 Key Usage: 
+                Digital Signature
+            X509v3 Subject Alternative Name: 
+                DNS:adama
+    Signature Algorithm: sha256WithRSAEncryption
+         3f:ec:87:3d:82:6e:28:b4:07:3b:a8:e4:c0:e6:a2:f9:25:a5:
+         8f:d0:81:1d:ac:3b:2b:a7:fe:03:ba:e8:e2:dd:b6:23:6a:91:
+         7c:75:5d:7b:44:3b:84:f9:b1:64:52:43:1a:fa:18:1e:d0:3d:
+         8d:e4:dd:aa:c2:0b:ca:16:75:3b:09:d6:0f:f8:d5:ef:11:5f:
+         4e:e0:f1:db:0e:1a:2d:f9:80:41:9b:08:6c:9e:d4:31:00:ce:
+         c2:63:2d:67:4a:bf:e9:b3:54:a1:44:e2:a8:94:ef:56:15:9b:
+         de:1d:c5:2f:86:ac:79:b5:29:b7:68:0e:20:c8:43:5b:af:8c:
+         96:b3:e4:e8:2c:0a:33:9b:fb:75:81:ea:f0:37:5a:47:4a:ff:
+         14:2d:a6:67:c2:d0:ae:f0:e5:c3:c2:a5:72:e4:06:d9:4f:7c:
+         4c:74:95:b4:68:61:20:25:53:32:fc:62:98:e9:00:7a:76:2b:
+         b1:46:48:e2:7d:45:cf:f7:2d:56:bc:4f:97:50:e1:0d:de:96:
+         73:40:eb:44:0f:40:b2:ab:06:51:d9:6e:8d:a4:30:58:90:5e:
+         94:4c:a7:50:eb:42:cd:58:37:1f:b5:7d:81:5f:da:04:db:b2:
+         33:6f:29:f8:b4:83:47:0b:b4:1e:bd:94:c0:6f:6c:9e:56:64:
+         6c:cb:75:6f
+-----BEGIN CERTIFICATE-----
+MIIFCTCCA/GgAwIBAgIBKTANBgkqhkiG9w0BAQsFADCBljELMAkGA1UEBhMCRlIx
+CzAJBgNVBAgTAkJSMQ8wDQYDVQQHEwZDZXNzb24xDzANBgNVBAoTBk9SQU5HRTER
+MA8GA1UECxQIT0xQU19WUE4xDzANBgNVBAMTBm1vaml0bzERMA8GA1UEKRQIT0xQ
+U19WUE4xITAfBgkqhkiG9w0BCQEWEm1lQG15aG9zdC5teWRvbWFpbjAeFw0xNzAz
+MDcwOTAyNTlaFw0yNzAzMDUwOTAyNTlaMIGVMQswCQYDVQQGEwJGUjELMAkGA1UE
+CBMCQlIxDzANBgNVBAcTBkNlc3NvbjEPMA0GA1UEChMGT1JBTkdFMREwDwYDVQQL
+FAhPTFBTX1ZQTjEOMAwGA1UEAxMFYWRhbWExETAPBgNVBCkUCE9MUFNfVlBOMSEw
+HwYJKoZIhvcNAQkBFhJtZUBteWhvc3QubXlkb21haW4wggEiMA0GCSqGSIb3DQEB
+AQUAA4IBDwAwggEKAoIBAQC/3MkYHXrTh5tahSYjgWOXYxR79q3o0GZzLtZi2BD/
+xryJnJnPgzk40Ir8lxKmRGqCMd1xJsR/z8x9mLdhuc+3v6L7ij3zhBfb+ILPd7xK
+IbO1a/EE/ABT1VqLZWAbdCnClastfHYDfk5KyQfVdjJLz3ZizZeDyI5qJ4dAIGMi
+A9ePbvMLTPcVAo6PA84mGXDrOiRHqGCzWa01Zb04COKEPyvdxx0nil/Xz2p4UfR2
+wOe4QLBD7VRufe3gz5QWmM+00yf35tkNPXX1KjcF11jr9X5GQarHiaWlDiUmiJ72
+YziM1/j6KsajG9pxCIEYt+ot5xwQ8GbInOb2Jj3qTiL9AgMBAAGjggFfMIIBWzAJ
+BgNVHRMEAjAAMC0GCWCGSAGG+EIBDQQgFh5FYXN5LVJTQSBHZW5lcmF0ZWQgQ2Vy
+dGlmaWNhdGUwHQYDVR0OBBYEFOmqJENs38h1hKY++slpdMpZnQyvMIHLBgNVHSME
+gcMwgcCAFMFINPgrFDW8lDyhKfXWuMOsq9PAoYGcpIGZMIGWMQswCQYDVQQGEwJG
+UjELMAkGA1UECBMCQlIxDzANBgNVBAcTBkNlc3NvbjEPMA0GA1UEChMGT1JBTkdF
+MREwDwYDVQQLFAhPTFBTX1ZQTjEPMA0GA1UEAxMGbW9qaXRvMREwDwYDVQQpFAhP
+TFBTX1ZQTjEhMB8GCSqGSIb3DQEJARYSbWVAbXlob3N0Lm15ZG9tYWluggkArQJi
+LtxCPycwEwYDVR0lBAwwCgYIKwYBBQUHAwIwCwYDVR0PBAQDAgeAMBAGA1UdEQQJ
+MAeCBWFkYW1hMA0GCSqGSIb3DQEBCwUAA4IBAQA/7Ic9gm4otAc7qOTA5qL5JaWP
+0IEdrDsrp/4Duuji3bYjapF8dV17RDuE+bFkUkMa+hge0D2N5N2qwgvKFnU7CdYP
++NXvEV9O4PHbDhot+YBBmwhsntQxAM7CYy1nSr/ps1ShROKolO9WFZveHcUvhqx5
+tSm3aA4gyENbr4yWs+ToLAozm/t1gerwN1pHSv8ULaZnwtCu8OXDwqVy5AbZT3xM
+dJW0aGEgJVMy/GKY6QB6diuxRkjifUXP9y1WvE+XUOEN3pZzQOtED0CyqwZR2W6N
+pDBYkF6UTKdQ60LNWDcftX2BX9oE27Izbyn4tINHC7QevZTAb2yeVmRsy3Vv
+-----END CERTIFICATE-----

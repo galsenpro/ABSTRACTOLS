@@ -1,0 +1,117 @@
+{
+    "configs": {
+         "pods": {
+            "pod": [
+                {
+                    "channels": {
+                        "channel": [{
+                            "idchannel": "1",
+                            "nom": "Arte"
+                        },{
+                            "idchannel": "2",
+                            "nom": "BFM"
+                        }
+                        ]
+                    },
+                    "idpod": "1",
+                    "link": "strm.poda.manager.cdvr.orange.fr",
+                    "name": "poda",
+                    "streamer": [
+                        {
+                            "address": "192.168.134.65",
+                            "idstreamer": "a1"
+                        },
+                        {
+                            "address": "192.168.134.67",
+                            "idstreamer": "a2"
+                        }
+                    ]
+                },
+                {
+                    "channels": {
+                        "channel": [
+                            {
+                                "idchannel": "1",
+                                "nom": "CH_1"
+                            },
+                            {
+                                "idchannel": "2",
+                                "nom": "CH_2"
+                            },
+                            {
+                                "idchannel": "3",
+                                "nom": "CH_3"
+                            },
+                            {
+                                "idchannel": "4",
+                                "nom": "CH_4"
+                            }
+                        ]
+                    },
+                    "idpod": "2",
+                    "link": "strm.podb.manager.cdvr.orange.fr",
+                    "name": "podb",
+                    "streamer": [
+                        {
+                            "address": "192.168.134.66",
+                            "idstreamer": "b1"
+                        },
+                        {
+                            "address": "192.168.134.68",
+                            "idstreamer": "b2"
+                        }
+                    ]
+                }
+            ]
+        },
+        "modes": {
+            "smooth": {
+                "staticabr": "shss", 
+                "fragment": "2", 
+                "manifestsuffix": "ism", 
+                "device": "SMOOTH_2S", 
+                "client": null
+            }, 
+            "dash": {
+                "staticabr": "sdash", 
+                "fragment": "2", 
+                "manifestsuffix": "mpd", 
+                "device": "DASH_2S", 
+                "client": null
+            }, 
+            "hls": {
+                "staticabr": "shls", 
+                "fragment": "10", 
+                "manifestsuffix": "m3u8", 
+                "device": "HLS_LOW", 
+                "client": null
+            }
+        }, 
+        "commands": {
+            "live": {
+                "period": "2"
+            }, 
+            "vod": {
+                "period": "5"
+            }, 
+            "catchup": {
+                "period": "-4", 
+                "jump": "-4"
+            }, 
+            "startover": {
+                "period": "15", 
+                "start": "07J-00H-00M-00S",
+                "end": "07J-00H-00M-00S"
+            }, 
+            
+            "ntc": {
+                "period": "15", 
+                "jump": "-2"
+            }, 
+            "npvr": {
+                "period": "1", 
+                "jump": "2"
+            }
+        }
+    }
+}

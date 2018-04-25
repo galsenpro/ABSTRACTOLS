@@ -1,0 +1,98 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="urn:mpeg:dash:schema:mpd:2011" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="MPD">
+    <xs:annotation>
+      <xs:documentation>Created with VIDFX Streamer version 3.8.2.2 build 72090</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Period">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AdaptationSet" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="AudioChannelConfiguration" minOccurs="0">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="schemeIdUri"/>
+                            <xs:attribute type="xs:byte" name="value"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="SegmentTemplate">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="SegmentTimeline">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="S" maxOccurs="unbounded" minOccurs="0">
+                                  <xs:complexType>
+                                    <xs:simpleContent>
+                                      <xs:extension base="xs:string">
+                                        <xs:attribute type="xs:long" name="t" use="optional"/>
+                                        <xs:attribute type="xs:int" name="d" use="optional"/>
+                                        <xs:attribute type="xs:short" name="r" use="optional"/>
+                                      </xs:extension>
+                                    </xs:simpleContent>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute type="xs:int" name="timescale" use="optional"/>
+                        <xs:attribute type="xs:string" name="media" use="optional"/>
+                        <xs:attribute type="xs:string" name="initialization" use="optional"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Representation" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="id" use="optional"/>
+                            <xs:attribute type="xs:int" name="bandwidth" use="optional"/>
+                            <xs:attribute type="xs:string" name="codecs" use="optional"/>
+                            <xs:attribute type="xs:short" name="width" use="optional"/>
+                            <xs:attribute type="xs:short" name="height" use="optional"/>
+                            <xs:attribute type="xs:byte" name="frameRate" use="optional"/>
+                            <xs:attribute type="xs:string" name="sar" use="optional"/>
+                            <xs:attribute type="xs:int" name="audioSamplingRate" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:byte" name="id" use="optional"/>
+                  <xs:attribute type="xs:byte" name="group" use="optional"/>
+                  <xs:attribute type="xs:string" name="bitstreamSwitching" use="optional"/>
+                  <xs:attribute type="xs:string" name="segmentAlignment" use="optional"/>
+                  <xs:attribute type="xs:string" name="contentType" use="optional"/>
+                  <xs:attribute type="xs:string" name="mimeType" use="optional"/>
+                  <xs:attribute type="xs:short" name="maxWidth" use="optional"/>
+                  <xs:attribute type="xs:short" name="maxHeight" use="optional"/>
+                  <xs:attribute type="xs:string" name="par" use="optional"/>
+                  <xs:attribute type="xs:byte" name="maxFrameRate" use="optional"/>
+                  <xs:attribute type="xs:byte" name="startWithSAP" use="optional"/>
+                  <xs:attribute type="xs:byte" name="maxPlayoutRate" use="optional"/>
+                  <xs:attribute type="xs:string" name="lang" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:byte" name="id"/>
+            <xs:attribute type="xs:duration" name="start"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="profiles"/>
+      <xs:attribute type="xs:string" name="type"/>
+      <xs:attribute type="xs:dateTime" name="availabilityStartTime"/>
+      <xs:attribute type="xs:dateTime" name="publishTime"/>
+      <xs:attribute type="xs:duration" name="timeShiftBufferDepth"/>
+      <xs:attribute type="xs:duration" name="minimumUpdatePeriod"/>
+      <xs:attribute type="xs:duration" name="maxSegmentDuration"/>
+      <xs:attribute type="xs:duration" name="minBufferTime"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

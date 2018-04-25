@@ -1,0 +1,125 @@
+[{
+		"fields": {
+			"@MajorVersion": 2, 
+			"@DVRWindowLength": 600000000, 
+			"@LookAheadFragmentCount": 4, 
+			"@MinorVersion": 1, 
+			"@Duration": 0
+			}, 
+		"time": "2017-03-07T15:04:44", 
+		"measurement": "SmoothMediaStream", 
+		"tags": {
+			"noeud": "NODEB2", 
+			"@CanPause": "TRUE", 
+			"profil": "SMOOTH", 
+			"commande": "LIVE", 
+			"@CanSeek": "TRUE", 
+			"@IsLive": "TRUE"
+			}
+		}, {
+		"fields": {
+			"@Index": 3, 
+			"@Bitrate": 2936012, 
+			"@MaxHeight": 720, 
+			"@MaxWidth": 1280
+			}, 
+		"time": "2017-03-07T15:04:44", 
+		"measurement": "QualityLevel", 
+		"tags": {
+			"noeud": "NODEB2",
+			"profil": "SMOOTH", 
+			"commande": "LIVE", 
+			"@FourCC": "H264", 
+			"@CodecPrivateData": "000000016764001FAC2CA5014016EC040A000000000168EF38B0"
+			}
+		}, {
+		"fields": {
+			"@BitsPerSample": 16, 
+			"@PacketSize": 4, 
+			"@AudioTag": 255, 
+			"@SamplingRate": 48000, 
+			"@Channels": 2, 
+			"@Bitrate": 96000
+			}, 
+		"time": "2017-03-07T15:04:44", 
+		"measurement": "QualityLevel", 
+		"tags": {
+			"noeud": "NODEB2", 
+			"commande": "LIVE", 
+			"@FourCC": "AACL", 
+			"@CodecPrivateData": "", 
+			"profil": "SMOOTH"
+			}
+		}, {
+		"fields": {
+			"@BitsPerSample": 16, 
+			"@PacketSize": 4, 
+			"@AudioTag": 255, 
+			"@SamplingRate": 24000, 
+			"@Channels": 1, 
+			"@Bitrate": 24000
+			}, 
+		"time": "2017-03-07T15:04:44", 
+		"measurement": "QualityLevel", 
+		"tags": {
+			"noeud": "NODEB2", 
+			"commande": "LIVE", 
+			"@FourCC": "AACL", 
+			"@CodecPrivateData": "", 
+			"profil": "SMOOTH"
+			}
+		}, {
+		"fields": {
+			"duree": 14888990667194590
+			}, 
+		"time": "2017-03-07T15:04:44", 
+		"measurement": "Chunks", 
+		"tags": {
+			"profil": "SMOOTH", 
+			"commande": "LIVE", 
+			"Type": "video", 
+			"noeud": "NODEB2"
+			}
+		}, {
+		"fields": {
+			"duree": 14888990667184673
+			}, 
+		"time": "2017-03-07T15:04:44", 
+		"measurement": "Chunks", 
+		"tags": {
+			"profil": "SMOOTH", 
+			"commande": "LIVE", 
+			"Type": "audio", 
+			"noeud": "NODEB2"
+			}
+		}, {
+		"fields": {
+			"duree": 14888990667530895
+			}, 
+		"time": "2017-03-07T15:04:44", 
+		"measurement": "Chunks", 
+		"tags": {
+			"profil": "SMOOTH", 
+			"commande": "LIVE", 
+			"Type": "audio", 
+			"noeud": "NODEB2"
+			}
+		}, {
+		"fields": {
+			"@Chunks": 5, 
+			"@Index": 0, 
+			"@QualityLevels": 1
+			}, 
+		"time": "2017-03-07T15:04:44", 
+		"measurement": "StreamIndex", 
+		"tags": {
+			"noeud": "NODEB2", 
+			"@Name": "audio_482_und", 
+			"commande": "LIVE", 
+			"@Language": "und", 
+			"@Url": "S!d2EJU01PT1RIXzJTEgJU.v...wEWBJ8_/QualityLevels({bitrate})/Fragments(audio_482_und={start time})", 
+			"profil": "SMOOTH", 
+			"@Type": "audio"
+			}
+		}
+	]

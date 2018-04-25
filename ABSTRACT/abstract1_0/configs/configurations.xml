@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configs>
+	<intervalle>5</intervalle>
+	<emailFrom>adama.dieng@orange.com</emailFrom>
+	<smsFrom>+33768225617</smsFrom>
+	<port>5555</port>
+	<pods>
+		<pod idpod="1">
+			<name>poda</name>
+			<link>strm.poda.manager.cdvr.orange.fr</link>
+			<streamer idstreamer="a1">
+				<address>192.168.134.65</address>
+			</streamer>
+			<streamer idstreamer="a2">
+				<address>192.168.134.67</address>
+			</streamer>
+			<channels>
+				<channel idchannel="1">
+				    <nom>Arte</nom>
+				</channel>
+			</channels>
+		</pod>
+		<pod idpod="2">
+			<name>podb</name>
+			<link>strm.podb.manager.cdvr.orange.fr</link>
+			<streamer idstreamer="b1">
+				<address>192.168.134.66</address>
+			</streamer>
+			<streamer idstreamer="b2">
+				<address>192.168.134.68</address>
+			</streamer>
+			<channels>
+				<channel idchannel="2">
+				    <nom>CH_2</nom>
+				</channel>
+				<channel idchannel="3">
+				    <nom>CH_3</nom>
+				</channel>
+				<channel idchannel="4">
+				    <nom>CH_4</nom>
+				</channel>
+			</channels>
+		</pod>
+	</pods>
+	<modes>
+		<smooth>
+			<staticabr>shss</staticabr>
+			<fragment>2</fragment>
+			<manifestsuffix>ism</manifestsuffix>
+			<device>SMOOTH_2S</device>
+			<client></client>
+		</smooth>
+		<dash>
+			<staticabr>sdash</staticabr>
+			<fragment>2</fragment>
+			<manifestsuffix>mpd</manifestsuffix>
+			<device>DASH_2S</device>
+			<client></client>
+		</dash>
+		<hls>
+			<staticabr>shls</staticabr>
+			<fragment>10</fragment>
+			<manifestsuffix>m3u8</manifestsuffix>
+			<device>HLS_LOW</device>
+			<client></client>
+		</hls>
+	</modes>
+	<timeout>10</timeout>
+	<commands>
+		<live>
+			<!-- Périod defined between 2 hours -->
+			<period>2</period>
+		</live>
+		<vod>
+			<!-- Périod defined between 2 hours -->
+			<period>5</period>
+		</vod>
+		<catchup>
+			<!-- Périod defined between 2 hours -->
+			<period>10</period>
+			<jump>-4</jump>
+		</catchup>
+		<ntc>
+			<!-- Périod defined between 2 hours -->
+			<period>15</period>
+			<jump>-2</jump>
+		</ntc>
+		<npvr>
+			<!-- Périod defined between 2 hours -->
+			<period>1</period>
+			<jump>2</jump>
+		</npvr>
+	</commands>
+	<destinationsEmail>
+		<mail idmail="1">
+		    <address>adama.dieng@orange.com</address>   
+		</mail>
+		<mail idmail="2">
+		    <address>adama.dieng@orange.com</address>   
+		</mail>
+		<mail idmail="3">
+		    <address>adama.dieng@orange.com</address>   
+		</mail>
+	</destinationsEmail>
+	<destinationSms>
+		<sms idsms="1">
+		    	<numero>+33768225617</numero>
+    	</sms>
+	</destinationSms>
+</configs>

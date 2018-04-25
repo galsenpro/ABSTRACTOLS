@@ -1,0 +1,14 @@
+{% extends 'squeletteflash.html' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block contenu %}
+        <p>Laissez moi un message en remplissant ce formulaire :</p>
+        <form action="" method="post">
+            <label for="msg">Votre message</label><br />
+            <textarea id="msg" name="msg"></textarea><br />
+            <label for="nom">Votre nom</label><br />
+            <input type="text" id="nom" name="nom"/><br />
+            <input type="submit" value="Envoyer">
+        </form>
+{% endblock %}

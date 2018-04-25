@@ -1,0 +1,140 @@
+{
+    "catchupfolderdash": "/home/adama/PROJET/ABSTRACT/AbstractBackend/manifests/dynamic/DASH/Catchup/", 
+    "catchupfolderhls": "/home/adama/PROJET/ABSTRACT/AbstractBackend/manifests/dynamic/HLS/Catchup/", 
+    "catchupfoldersmooth": "/home/adama/PROJET/ABSTRACT/AbstractBackend/manifests/dynamic/MSS/Catchup/", 
+    "configs": {
+        "commands": {
+            "catchup": {
+                "jump": "-4", 
+                "period": "-4"
+            }, 
+            "live": {
+                "period": "2"
+            }, 
+            "npvr": {
+                "jump": "2", 
+                "period": "1"
+            }, 
+            "ntc": {
+                "jump": "-2", 
+                "period": "15"
+            }, 
+            "startover": {
+                "end": "07J-00H-00M-00S", 
+                "period": "15", 
+                "start": "07J-00H-00M-00S"
+            }, 
+            "vod": {
+                "period": "5"
+            }
+        }, 
+        "modes": {
+            "dash": {
+                "client": null, 
+                "device": "DASH_2S", 
+                "fragment": "2", 
+                "manifestsuffix": "mpd", 
+                "staticabr": "sdash"
+            }, 
+            "hls": {
+                "client": null, 
+                "device": "HLS_LOW", 
+                "fragment": "10", 
+                "manifestsuffix": "m3u8", 
+                "staticabr": "shls"
+            }, 
+            "smooth": {
+                "client": null, 
+                "device": "SMOOTH_2S", 
+                "fragment": "2", 
+                "manifestsuffix": "ism", 
+                "staticabr": "shss"
+            }
+        }, 
+        "pods": {
+            "pod": [
+                {
+                    "channels": {
+                        "channel": [
+                            {
+                                "idchannel": "1", 
+                                "nom": "Arte"
+                            }, 
+                            {
+                                "idchannel": "2", 
+                                "nom": "BFM"
+                            }
+                        ]
+                    }, 
+                    "idpod": "1", 
+                    "link": "strm.poda.manager.cdvr.orange.fr", 
+                    "name": "poda", 
+                    "streamer": [
+                        {
+                            "address": "192.168.134.65", 
+                            "idstreamer": "a1"
+                        }, 
+                        {
+                            "address": "192.168.134.67", 
+                            "idstreamer": "a2"
+                        }
+                    ]
+                }, 
+                {
+                    "channels": {
+                        "channel": [
+                            {
+                                "idchannel": "1", 
+                                "nom": "CH_1"
+                            }, 
+                            {
+                                "idchannel": "2", 
+                                "nom": "CH_2"
+                            }, 
+                            {
+                                "idchannel": "3", 
+                                "nom": "CH_3"
+                            }, 
+                            {
+                                "idchannel": "4", 
+                                "nom": "CH_4"
+                            }
+                        ]
+                    }, 
+                    "idpod": "2", 
+                    "link": "strm.podb.manager.cdvr.orange.fr", 
+                    "name": "podb", 
+                    "streamer": [
+                        {
+                            "address": "192.168.134.66", 
+                            "idstreamer": "b1"
+                        }, 
+                        {
+                            "address": "192.168.134.68", 
+                            "idstreamer": "b2"
+                        }
+                    ]
+                }
+            ]
+        }
+    }, 
+    "created": "2017-08-24 07:48:34", 
+    "emailFrom": "adama.dieng@orange.com", 
+    "folderOfIframeFile": "/home/adama/PROJET/ABSTRACT/AbstractBackend/Iframe/", 
+    "folderOfLevelFile": "/home/adama/PROJET/ABSTRACT/AbstractBackend/Levels/", 
+    "intervalle": "10", 
+    "livefolderdash": "/home/adama/PROJET/ABSTRACT/AbstractBackend/manifests/dynamic/DASH/Live/", 
+    "livefolderhls": "/home/adama/PROJET/ABSTRACT/AbstractBackend/manifests/dynamic/HLS/Live/", 
+    "livefoldersmooth": "/home/adama/PROJET/ABSTRACT/AbstractBackend/manifests/dynamic/MSS/Live/", 
+    "logdirectory": "/home/adama/PROJET/ABSTRACT/AbstractBackend/logabstract", 
+    "logprefixname": "abstractLog", 
+    "name": "Configuration MISTRAL", 
+    "nameOfIframeFile": "Iframe", 
+    "nameOfLevelFile": "Level", 
+    "port": "5555", 
+    "protocole": "http", 
+    "schemadash": "schemas/dash/2017/08/24/MPD.xsd", 
+    "schemasmooth": "schemas/smooth/2017/08/24/SmoothStreamingMedia.xsd", 
+    "smsFrom": "+33768225617", 
+    "vspp_id": 1
+}

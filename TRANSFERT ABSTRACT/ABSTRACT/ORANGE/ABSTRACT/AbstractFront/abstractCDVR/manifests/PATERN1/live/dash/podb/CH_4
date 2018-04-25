@@ -1,0 +1,115 @@
+{
+    "MPD": {
+        "xmlns": "urn:mpeg:dash:schema:mpd:2011", 
+        "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance", 
+        "profiles": "urn:mpeg:dash:profile:isoff-live:2011", 
+        "type": "dynamic", 
+        "availabilityStartTime": "1970-01-01T00:00:00Z", 
+        "publishTime": "2017-09-20T13:14:13Z", 
+        "timeShiftBufferDepth": "PT13S", 
+        "minimumUpdatePeriod": "PT1S", 
+        "maxSegmentDuration": "PT2.006S", 
+        "minBufferTime": "PT3S", 
+        "Period": {
+            "id": "1", 
+            "start": "PT0S", 
+            "AdaptationSet": [
+                {
+                    "id": "1", 
+                    "group": "1", 
+                    "bitstreamSwitching": "true", 
+                    "segmentAlignment": "true", 
+                    "contentType": "video", 
+                    "mimeType": "video/mp4", 
+                    "maxWidth": "854", 
+                    "maxHeight": "480", 
+                    "par": "427:240", 
+                    "maxFrameRate": "25", 
+                    "startWithSAP": "1", 
+                    "maxPlayoutRate": "25", 
+                    "SegmentTemplate": {
+                        "timescale": "10000000", 
+                        "media": "S!d2EHREFTSF8yUxICVP7...8BFgSf/QualityLevels($Bandwidth$)/Fragments(video=$Time$)", 
+                        "initialization": "S!d2EHREFTSF8yUxICVP7...8BFgSf/QualityLevels($Bandwidth$)/Fragments(video=Init)", 
+                        "SegmentTimeline": {
+                            "S": {
+                                "t": "15059130696465530", 
+                                "d": "20000000", 
+                                "r": "4"
+                            }
+                        }
+                    }, 
+                    "Representation": [
+                        {
+                            "id": "video.1.L1", 
+                            "bandwidth": "419430", 
+                            "codecs": "avc1.4d4015", 
+                            "width": "480", 
+                            "height": "270", 
+                            "frameRate": "25", 
+                            "sar": "1:1"
+                        }, 
+                        {
+                            "id": "video.1.L2", 
+                            "bandwidth": "838860", 
+                            "codecs": "avc1.4d401e", 
+                            "width": "640", 
+                            "height": "360", 
+                            "frameRate": "25", 
+                            "sar": "1:1"
+                        }, 
+                        {
+                            "id": "video.1.L3", 
+                            "bandwidth": "1887436", 
+                            "codecs": "avc1.4d401e", 
+                            "width": "854", 
+                            "height": "480", 
+                            "frameRate": "25", 
+                            "sar": "1:1"
+                        }
+                    ]
+                }, 
+                {
+                    "id": "2", 
+                    "group": "2", 
+                    "bitstreamSwitching": "true", 
+                    "segmentAlignment": "true", 
+                    "contentType": "audio", 
+                    "mimeType": "audio/mp4", 
+                    "lang": "fra", 
+                    "AudioChannelConfiguration": {
+                        "schemeIdUri": "urn:mpeg:dash:23003:3:audio_channel_configuration:2011", 
+                        "value": "2"
+                    }, 
+                    "SegmentTemplate": {
+                        "timescale": "48000", 
+                        "media": "S!d2EHREFTSF8yUxICVP7...8BFgSf/QualityLevels($Bandwidth$)/Fragments(audio_483_fra=$Time$)", 
+                        "initialization": "S!d2EHREFTSF8yUxICVP7...8BFgSf/QualityLevels($Bandwidth$)/Fragments(audio_483_fra=Init)", 
+                        "SegmentTimeline": {
+                            "S": [
+                                {
+                                    "t": "72283827343513", 
+                                    "d": "96256", 
+                                    "r": "1"
+                                }, 
+                                {
+                                    "d": "95232"
+                                }, 
+                                {
+                                    "d": "96256", 
+                                    "r": "1"
+                                }
+                            ]
+                        }
+                    }, 
+                    "Representation": {
+                        "id": "audio_483_fra.2.L1", 
+                        "bandwidth": "96000", 
+                        "codecs": "mp4a.40.2", 
+                        "audioSamplingRate": "48000"
+                    }
+                }
+            ]
+        }
+    }
+}

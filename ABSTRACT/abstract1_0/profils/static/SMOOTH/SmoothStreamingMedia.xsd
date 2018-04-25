@@ -1,0 +1,65 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="SmoothStreamingMedia">
+    <xs:annotation>
+      <xs:documentation>Created with VIDFX Streamer version 3.8.2.0 build 68391</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="StreamIndex" maxOccurs="unbounded" minOccurs="2">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="QualityLevel" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:byte" name="Index" use="optional"/>
+                      <xs:attribute type="xs:int" name="Bitrate" use="optional"/>
+                      <xs:attribute type="xs:string" name="FourCC" use="optional"/>
+                      <xs:attribute type="xs:short" name="MaxWidth" use="optional"/>
+                      <xs:attribute type="xs:short" name="MaxHeight" use="optional"/>
+                      <xs:attribute type="xs:string" name="CodecPrivateData" use="optional"/>
+                      <xs:attribute type="xs:int" name="SamplingRate" use="optional"/>
+                      <xs:attribute type="xs:byte" name="Channels" use="optional"/>
+                      <xs:attribute type="xs:byte" name="BitsPerSample" use="optional"/>
+                      <xs:attribute type="xs:byte" name="PacketSize" use="optional"/>
+                      <xs:attribute type="xs:short" name="AudioTag" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="c" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:long" name="t" use="optional"/>
+                      <xs:attribute type="xs:int" name="d" use="required"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="Type" use="required"/>
+            <xs:attribute type="xs:string" name="Name" use="optional"/>
+            <xs:attribute type="xs:long" name="Chunks" use="optional"/>
+            <xs:attribute type="xs:long" name="QualityLevels" use="optional"/>
+            <xs:attribute type="xs:short" name="MaxWidth" use="optional"/>
+            <xs:attribute type="xs:short" name="MaxHeight" use="optional"/>
+            <xs:attribute type="xs:short" name="DisplayWidth" use="optional"/>
+            <xs:attribute type="xs:short" name="DisplayHeight" use="optional"/>
+            <xs:attribute type="xs:string" name="Url" use="optional"/>
+            <xs:attribute type="xs:byte" name="Index" use="optional"/>
+            <xs:attribute type="xs:string" name="Language" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute type="xs:long" name="MajorVersion"/>
+      <xs:attribute type="xs:long" name="MinorVersion"/>
+      <xs:attribute type="xs:long" name="Duration"/>
+      <xs:attribute type="xs:long" name="DVRWindowLength"/>
+      <xs:attribute type="xs:long" name="LookAheadFragmentCount"/>
+      <xs:attribute type="xs:string" name="IsLive"/>
+      <xs:attribute type="xs:string" name="CanSeek"/>
+      <xs:attribute type="xs:string" name="CanPause"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
